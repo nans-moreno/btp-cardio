@@ -1,0 +1,12 @@
+cat <<EOF > job03.txt
+mkdir test0
+chmod 500 test0
+touch -t 202501012047 test0
+echo "123" > test1
+chmod 714 test1
+touch -t 202501012146 test1
+ln -s test0 test2
+touch -h -t 202501012220 test2
+ls -l
+EOF
+
